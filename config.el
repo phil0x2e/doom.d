@@ -75,3 +75,11 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+;; Org-Roam
+(setq org-roam-directory (file-truename "~/org-roam"))
+(org-roam-db-autosync-mode)
+
+(map! "C-c n l" 'org-roam-buffer-toggle)
+(map! "C-c n f" 'org-roam-node-find)
+(map! "C-c n i" 'org-roam-node-insert)
